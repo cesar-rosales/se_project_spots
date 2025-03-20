@@ -16,6 +16,8 @@ Spots is a social media web application designed to ensure all elements display 
 
 Images should be exported directly from Figma. To optimize loading speeds, we recommend using [TinyPNG](https://tinypng.com/) for compression before adding them to the project.
 
+---
+
 ### Tech Stack  
 
 - **HTML** – Structure of the web application
@@ -27,6 +29,8 @@ Images should be exported directly from Figma. To optimize loading speeds, we re
 ## Deployment
 
 This webpage is deployed to GitHub Pages
+
+- [Deployment Link](https://cesar-rosales.github.io/se_project_spots/)
 
 ---
 
