@@ -1,8 +1,8 @@
 # Project: Spots  
 
-## Overview  
+### Overview  
 
-Spots is a social media web application designed to ensure all elements display correctly across different screen sizes. This project requires more time and effort than previous ones, as there are still key features that need to be completed.
+Spots is a social media web application designed to ensure all elements display correctly across different screen sizes. This project requires more time and effort than previous ones.
 
 ---
 
@@ -26,7 +26,7 @@ Images should be exported directly from Figma. To optimize loading speeds, we re
 
 ---
 
-## Deployment
+### Deployment
 
 This webpage is deployed to GitHub Pages
 
