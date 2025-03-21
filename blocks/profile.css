@@ -1,6 +1,5 @@
 .profile {
   display: flex;
-  max-height: 210px;
   padding: 34px 0 20px;
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
@@ -8,7 +7,7 @@
 .profile__avatar {
   width: 190px;
   height: 190px;
-  border-radius: 10%;
+  border-radius: 8px;
   margin-right: 20px;
 }
 .profile__info {
@@ -20,8 +19,6 @@
   margin: 0 0 12px;
   font-weight: 500;
   line-height: 1;
-  width: 420px;
-  height: 32px;
   font-size: 32px;
   display: -webkit-box;
   overflow: hidden;
@@ -29,6 +26,7 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+  color: #212121;
 }
 
 .profile__bio {
@@ -40,6 +38,9 @@
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .profile__edit-btn {
@@ -49,15 +50,29 @@
   text-align: start;
   margin: 114px 0 0 0;
   padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: rgba(33, 33, 33, 0.7);
+}
+.profile__edit-btn:hover {
+  cursor: pointer;
+  color: rgba(33, 33, 33, 1);
 }
 
 .profile__add-btn {
   width: 149px;
-  max-height: 52px;
+  height: 52px;
   color: #fff;
-  background-color: #212121;
+  background-color: rgba(33, 33, 33, 1);
   border-radius: 8px;
   text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+}
+.profile__add-btn:hover {
+  cursor: pointer;
+  background-color: rgba(33, 33, 33, 0.8);
 }
 
 @media screen and (max-width: 785px) {
