@@ -32,6 +32,8 @@ This webpage is deployed to GitHub Pages
 
 - [Deployment Link](https://cesar-rosales.github.io/se_project_spots/)
 
+- [Projcet Overview-Video](https://drive.google.com/file/d/1-2vFM5HXizuFZHcUxReLVoKm4FFW_uaK/view?usp=drive_link)
+
 ---
 
 There’s still work to be done, but with continued effort, we’ll refine and complete the remaining features. Looking forward to making this project even better!
