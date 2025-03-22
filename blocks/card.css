@@ -57,6 +57,7 @@
     font-size: 16px;
     margin: 0;
     line-height: 1;
+    max-width: 250px;
   }
   .card__content {
     padding-top: 12px;
