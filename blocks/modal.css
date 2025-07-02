@@ -40,6 +40,13 @@
   border: none;
 }
 
+.modal__close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .modal__title {
   margin: 0 0 32px;
   font-size: 32px;
@@ -75,7 +82,14 @@
   background-color: #212121;
   color: #fcf5e5;
   border-radius: 8px;
-  font: 16px;
+  font-size: 16px;
+}
+
+.modal__submit-btn:hover {
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .modal__input::placeholder {

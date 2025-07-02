@@ -1,3 +1,10 @@
+function openModal(modal) {
+  modal.classList.add("modal_is-open");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_is-open");
+}
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -19,35 +26,44 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const profileName = document.querySelector(".profile__name");
 const profileBio = document.querySelector(".profile__bio");
 
-editProfileBtn.addEventListener("click", function () {
+// Event Handlers
+function handleEditProfileOpen() {
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileBio.textContent;
-  editProfileModal.classList.add("modal_is-open");
-});
-editProfileCloseBtn.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-open");
-});
+  openModal(editProfileModal);
+}
 
-newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-open");
-});
+function handleEditProfileClose() {
+  closeModal(editProfileModal);
+}
 
-newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-open");
-});
+function handleNewPostOpen() {
+  openModal(newPostModal);
+}
 
-function handelEditProfileSubmit(event) {
+function handleNewPostClose() {
+  closeModal(newPostModal);
+}
+
+function handleEditProfileSubmit(event) {
   event.preventDefault();
   profileName.textContent = editProfileNameInput.value;
   profileBio.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal_is-open");
+  closeModal(editProfileModal);
 }
 
-function handelAddCardSubmit(event) {
+function handleAddCardSubmit(event) {
   event.preventDefault();
   console.log("image: ", linkInput.value);
   console.log("caption: ", nameInput.value);
+  closeModal(newPostModal);
+  addCardFormElement.reset(); // clear inputs
 }
 
-editProfileForm.addEventListener("submit", handelEditProfileSubmit);
-addCardFormElement.addEventListener("submit", handelAddCardSubmit);
+editProfileBtn.addEventListener("click", handleEditProfileOpen);
+editProfileCloseBtn.addEventListener("click", handleEditProfileClose);
+newPostBtn.addEventListener("click", handleNewPostOpen);
+newPostCloseBtn.addEventListener("click", handleNewPostClose);
+
+editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);

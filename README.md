@@ -1,39 +1,50 @@
-# Project: Spots  
+# Project: Spots
 
-### Overview  
+## Overview
 
-Spots is a social media web application designed to ensure all elements display correctly across different screen sizes. This project requires more time and effort than previous ones.
-
----
-
-### Design Reference  
-
-**Figma**
-
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-
-**Images**
-
-Images should be exported directly from Figma. To optimize loading speeds, we recommend using [TinyPNG](https://tinypng.com/) for compression before adding them to the project.
+**Spots** is a responsive social media web application built to ensure that all UI elements display correctly across a variety of screen sizes. This project builds upon foundational concepts in HTML, CSS, and JavaScript, and introduces more complex functionality and design responsiveness compared to previous projects.
 
 ---
 
-### Tech Stack  
+## Design Reference
 
-- **HTML** – Structure of the web application
-- **CSS** – Styling and layout
-- **Responsive Design** – Ensuring compatibility across different screen sizes
+**Figma Prototype**  
+[View on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
----
-
-### Deployment
-
-This webpage is deployed to GitHub Pages
-
-- [Deployment Link](https://cesar-rosales.github.io/se_project_spots/)
-
-- [Projcet Overview-Video](https://drive.google.com/file/d/1-2vFM5HXizuFZHcUxReLVoKm4FFW_uaK/view?usp=drive_link)
+**Image Optimization**  
+Images used in the project should be exported from Figma and compressed using [TinyPNG](https://tinypng.com/) to ensure fast load times and optimal performance.
 
 ---
 
-There’s still work to be done, but with continued effort, we’ll refine and complete the remaining features. Looking forward to making this project even better!
+## Tech Stack
+
+- **HTML5** – Semantic structure and accessibility
+- **CSS3** – Visual styling and layout
+- **JavaScript (ES6+)** – Interactive behavior and DOM manipulation
+- **Responsive Design** – Mobile-first layout, media queries, and flexible components
+
+---
+
+## Deployment
+
+This project is deployed using GitHub Pages.  
+Click the link below to view the live version:
+
+🔗 [Live Deployment](https://cesar-rosales.github.io/se_project_spots/)
+
+🎥 [Project Walkthrough Video](https://drive.google.com/file/d/1-2vFM5HXizuFZHcUxReLVoKm4FFW_uaK/view?usp=drive_link)
+
+---
+
+## Future Improvements
+
+The current version lays the foundation for a scalable web app. Future goals include:
+
+- Adding dynamic card creation from user input
+- Expanding to include a like button toggle feature
+- Improving accessibility and keyboard navigation
+- Refactoring code for modularity and reusability
+
+---
+
+Thanks for reviewing! Looking forward to continued development and refinement. 🚀
