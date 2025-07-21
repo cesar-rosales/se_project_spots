@@ -53,7 +53,6 @@ const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const profileName = document.querySelector(".profile__name");
 const profileBio = document.querySelector(".profile__bio");
 
-// Event Handlers
 function handleEditProfileOpen() {
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileBio.textContent;
@@ -84,7 +83,7 @@ function handleAddCardSubmit(event) {
   console.log("image: ", linkInput.value);
   console.log("caption: ", nameInput.value);
   closeModal(newPostModal);
-  addCardFormElement.reset(); // clear inputs
+  addCardFormElement.reset();
 }
 
 editProfileBtn.addEventListener("click", handleEditProfileOpen);
