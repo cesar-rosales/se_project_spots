@@ -27,6 +27,7 @@
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .modal__image-preview {
@@ -35,24 +36,18 @@
   margin: 0 auto;
   display: block;
   border-radius: 8px;
+  width: 100%;
 }
 
 .modal__image-container {
-  background-color: transparent;
-  padding: 0;
-  border-radius: 8px;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .modal__caption {
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
   background-color: #212121;
   margin-top: 8px;
-  height: 32px;
   display: flex;
   width: fit-content;
   align-self: flex-start;
@@ -99,7 +94,7 @@
   transition: background-color 0.3s ease;
 }
 
-.modal--preview {
+.modal_type_preview {
   padding: 0 16px;
   display: flex;
   flex-direction: column;
@@ -132,6 +127,7 @@
   margin: 8px 0 0;
   padding-left: 12px;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .modal__submit-btn {
@@ -156,6 +152,14 @@
 }
 
 @media (max-width: 785px) {
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+
+  .modal__caption{
+    font-size: 16px;
+  }
+
   .modal__title {
     font-size: 20px;
     margin: 0 0 24px;
@@ -174,7 +178,7 @@
   .modal__close-btn {
     width: 32px;
     height: 32px;
-    top: 24px;
+    top: 14px;
     right: 16px;
   }
 }
@@ -186,6 +190,6 @@
     right: 0;
   }
 }
-.modal__image-container {
+.modal__image-preview {
   max-width: unset;
 }
