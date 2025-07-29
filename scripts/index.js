@@ -31,9 +31,11 @@ const initialCards = [
 ];
 
 const previewModal = document.querySelector("#preview-modal");
-const previewImage = previewModal?.querySelector(".modal__image-preview");
+const previewImage = previewModal.querySelector(".modal__image-preview");
 const previewCaption = previewModal?.querySelector(".modal__caption");
-const previewCloseBtn = previewModal?.querySelector(".modal__close-btn-preview");
+const previewCloseBtn = previewModal?.querySelector(
+  ".modal__close-btn-preview"
+);
 
 if (previewCloseBtn) {
   previewCloseBtn.addEventListener("click", () => closeModal(previewModal));
