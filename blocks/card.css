@@ -70,7 +70,7 @@
 }
 
 .card__like-btn_active {
-  background-image: url(../images/heart-default.svg);
+  background-image: url(../images/HeartNoBG.svg);
   opacity: 1;
 }
 
