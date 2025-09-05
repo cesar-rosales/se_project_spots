@@ -135,7 +135,7 @@ const handleAddCardSubmit = (event) => {
   const cardElement = getCardElement(cardData);
   cardsList.prepend(cardElement);
   addCardFormElement.reset();
-  disableBtn(cardSubmitBtn);
+  disableBtn(cardSubmitBtn, settings);
   closeModal(newPostModal);
 };
 
