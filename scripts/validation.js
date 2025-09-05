@@ -58,7 +58,7 @@ const setEventListeners = (formEl, config) => {
 
   toggleButtonState(inputList, buttonEl, config);
 
-  inputList.forEach((inputEl, config) => {
+  inputList.forEach((inputEl) => {
     inputEl.addEventListener("input", function () {
       checkInputValidity(formEl, inputEl, config);
       toggleButtonState(inputList, buttonEl, config);
