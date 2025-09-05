@@ -110,12 +110,15 @@
 .modal__form {
   display: flex;
   flex-direction: column;
+  margin-top: 32px;
 }
 
 .modal__label {
   margin: 0 0 32px;
   color: #212121b2;
   font-size: 16px;
+  display: block;
+  margin-bottom: 32px;
 }
 
 .modal__input {
@@ -128,6 +131,25 @@
   padding-left: 12px;
   font-size: 20px;
   box-sizing: border-box;
+}
+
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  color: rgba(255, 0, 0, 0.7);
+}
+.modal__input:hover {
+  border: 1px solid rgba(33, 33, 33, 1);
+}
+
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__submit-btn:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  color: #ffffff;
 }
 
 .modal__submit-btn {
@@ -156,7 +178,7 @@
     padding: 22px 12px 12px;
   }
 
-  .modal__caption{
+  .modal__caption {
     font-size: 16px;
   }
 

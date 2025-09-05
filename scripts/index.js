@@ -29,13 +29,11 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg",
   },
 ];
-
+// Preview Image Elements
 const previewModal = document.querySelector("#preview-modal");
 const previewImage = previewModal.querySelector(".modal__image-preview");
 const previewCaption = previewModal.querySelector(".modal__caption");
-const previewCloseBtn = previewModal.querySelector(
-  ".modal__close-btn-preview"
-);
+const previewCloseBtn = previewModal.querySelector(".modal__close-btn-preview");
 
 if (previewCloseBtn) {
   previewCloseBtn.addEventListener("click", () => closeModal(previewModal));
@@ -45,7 +43,7 @@ function openModal(modal) {
   return modal.classList.add("modal_is-open");
 }
 const closeModal = (modal) => modal.classList.remove("modal_is-open");
-
+// Edit form Elements
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
@@ -63,6 +61,7 @@ const addCardFormElement = newPostModal.querySelector(".modal__form");
 const linkInput = newPostModal.querySelector("#card-image-input");
 const nameInput = newPostModal.querySelector("#image-caption-input");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+const cardSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 
 const profileName = document.querySelector(".profile__name");
 const profileBio = document.querySelector(".profile__bio");
@@ -107,6 +106,10 @@ const getCardElement = (data) => {
 const handleEditProfileOpen = () => {
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileBio.textContent;
+  resetValidation(editProfileForm, [
+    editProfileNameInput,
+    editProfileDescriptionInput,
+  ]);
   openModal(editProfileModal);
 };
 
@@ -131,8 +134,9 @@ const handleAddCardSubmit = (event) => {
   console.log("nameInput.value:", nameInput.value);
   const cardElement = getCardElement(cardData);
   cardsList.prepend(cardElement);
-  closeModal(newPostModal);
   addCardFormElement.reset();
+  disableBtn(cardSubmitBtn);
+  closeModal(newPostModal);
 };
 
 editProfileBtn.addEventListener("click", handleEditProfileOpen);
