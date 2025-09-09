@@ -60,6 +60,7 @@
 }
 
 .modal__close-btn {
+  opacity: 0.4;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -71,8 +72,7 @@
 }
 
 .modal__close-btn:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
+  opacity: 0.1;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -84,11 +84,11 @@
   background-color: transparent;
   padding: 0;
   border: none;
+  opacity: 0.4;
 }
 
 .modal__close-btn-preview:hover {
-  background-color: rgba(0, 0, 0);
-  border-radius: 100%;
+  opacity: 0.1;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
