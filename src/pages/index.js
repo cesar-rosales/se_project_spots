@@ -1,4 +1,9 @@
-import { enableValidation, settings } from "./validation.js";
+import {
+  enableValidation,
+  settings,
+  resetValidation,
+} from "../scripts/validation.js";
+import "./index.css";
 
 const initialCards = [
   {
@@ -126,15 +131,15 @@ const getCardElement = (data) => {
 const handleEditProfileOpen = () => {
   editProfileNameInput.value = profileName.textContent;
   editProfileDescriptionInput.value = profileBio.textContent;
-  resetValidation(editProfileForm, [
-    editProfileNameInput,
-    editProfileDescriptionInput,
-  ]);
+  resetValidation(editProfileForm, settings);
   openModal(editProfileModal);
 };
 
 const handleEditProfileClose = () => closeModal(editProfileModal);
-const handleNewPostOpen = () => openModal(newPostModal);
+const handleNewPostOpen = () => {
+  resetValidation(addCardFormElement, settings);
+  openModal(newPostModal);
+};
 const handleNewPostClose = () => closeModal(newPostModal);
 
 const handleEditProfileSubmit = (event) => {
@@ -154,7 +159,7 @@ const handleAddCardSubmit = (event) => {
   const cardElement = getCardElement(cardData);
   cardsList.prepend(cardElement);
   addCardFormElement.reset();
-  disableBtn(cardSubmitBtn, settings);
+  resetValidation(addCardFormElement, settings);
   closeModal(newPostModal);
 };
 
