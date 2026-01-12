@@ -2,7 +2,7 @@
   "name": "se_project_spots",
   "version": "1.0.0",
   "description": "**Spots** is a responsive social media web application built to ensure that all UI elements display correctly across a variety of screen sizes. This project builds upon foundational concepts in HTML, CSS, and JavaScript, and introduces more complex functionality and design responsiveness compared to previous projects.",
-  "homepage": "https://github.com/cesar-rosales/se_project_spots#readme",
+  "homepage": "https://cesar-rosales.github.io/se_project_spots/",
   "bugs": {
     "url": "https://github.com/cesar-rosales/se_project_spots/issues"
   },

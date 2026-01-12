@@ -14,8 +14,7 @@ module.exports = {
     clean: true,
   },
 
-  mode: "development",
-  devtool: "inline-source-map",
+  devtool: false,
   stats: "errors-only",
   devServer: {
     static: path.resolve(__dirname, "./dist"),
